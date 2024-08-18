@@ -6,6 +6,459 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700|Oswald:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/DeepSpatial2020icon.png">
+    
+    <style type="text/css">
+      .myimg {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <div class="site-wrap" id="home-section">
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+      
+      <div class="top-bar"></div>
+
+      <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+        <div class="container">
+          <div class="row align-items-center position-relative">
+            <div class="col-12">
+              <nav class="site-navigation text-right ml-auto" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                  <li><a href="index.html#desp-section" class="nav-link">Home</a></li>
+                  <li><a href="index.html#program-section" class="nav-link">Program</a></li>
+                  <li><a href="index.html#keynotes-section" class="nav-link">Keynote Speakers</a></li>
+                  <li><a href="index.html#org-com-section" class="nav-link">Organization Committee</a></li>
+                  <li><a href="index.html#paper-sub-section" class="nav-link active">Paper Submission</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="toggle-button d-inline-block d-lg-none">
+              <a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="site-section-cover overlay img-bg-section" style="background-image: url('images/hero_3.jpg');">
+        <div class="container">
+          <div class="row align-items-center justify-content-center text-center">
+            <div class="col-md-12 col-lg-7">
+              <h1 data-aos="fade-up" data-aos-delay="">Welcome to DeepSpatial 2024</h1>
+              <p class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                4th ACM SIGKDD Workshop on Deep Learning for Spatiotemporal Data, Applications, and Systems<br/>
+                August 26, 2024 9:00 AM – 1:00 PM<br/>Room: TBD<br/>KDD-organized Conference
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="site-section">
+        <div class="block__73694 mb-2" id="desp-section">
+          <div class="container">
+            <div class="row d-flex no-gutters align-items-stretch">
+              <div class="col-lg-12" data-aos="" data-aos-delay="">
+                <p class="mb-3 text-black">
+                  Building on previous successful DeepSpatial’20, DeepSpatial’21, and DeepSpatial’22 workshops at SIGKDD, we are proposing the 4th SIGKDD Workshop on Deep Learning for Spatio-temporal Data, Applications, and Systems (DeepSpatial’24) at the 30th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining as a half-day workshop. This year’s workshop features several new items, including emerging themes related to foundation models for spatiotemporal data and their interdisciplinary scientific applications, two distinguished keynote speakers, and two discussion panels on ongoing debates in the field.
+                </p>
+                <div align="center">
+                  <p class="mb-5 text-black">
+                    <font size="12"><b>Aims and Scope</b></font>
+                  </p>
+                </div>
+                <p class="mb-3 text-black">
+                  This workshop will provide a premium platform for researchers from both academia and industry to exchange ideas on emerging research themes related to deep learning for spatiotemporal data, particularly on Foundation Models (LLMs, LVMs) and their interdisciplinary scientific applications.
+                  <br/><br/><b>Topics of Interest</b>: We will welcome submissions under relevant topics including, <b>but not limited to</b>, the following four broad categories:
+                </p>
+
+                <p class="mb-3 text-black"><b>Emerging Foundation Models and Deep Learning for Spatiotemporal Data:</b></p>
+                <ul class="mb-3 text-black">
+                  <li>Technical advances in pretraining, fine-tuning, prompting, and in-context learning of LLMs as motivated by geographical and spatiotemporal problems</li>
+                  <li>Applying or customizing existing foundation models to spatiotemporal data</li>
+                  <li>Novel design of foundation models to address the unique characteristics of spatiotemporal data that are different from video or text</li>
+                  <li>Multi-modal foundational models that integrate unstructured and structured (e.g., sequences or networks) spatiotemporal data</li>
+                  <li>Grounding foundation models with physical knowledge</li>
+                  <li>Ethical issues of foundation models (fairness, interpretability, transparency)</li>
+                  <li>Identifying and mitigating risks and caveats for foundation models in spatiotemporal applications</li>
+                </ul>
+
+                <p class="mb-3 text-black"><b>Spatial Representation and Networks:</b></p>
+                <ul class="mb-3 text-black">
+                  <li>Spatial representation learning and deep neural networks for spatio-temporal data and geometric data</li>
+                  <li>Physics-guided and interpretable deep learning for spatiotemporal data</li>
+                  <li>Deep generative models for spatio-temporal data</li>
+                  <li>Deep reinforcement learning for spatiotemporal decision-making problems</li>
+                </ul>
+
+                <p class="mb-3 text-black"><b>Responsible GeoAI and Applications:</b></p>
+                <ul class="mb-3 text-black">
+                  <li>Interdisciplinary Applications: Oceanography, natural disaster management, weather forecasting, agriculture, renewable energy, transportation and mobility applications, manufacturing and construction, biological applications (e.g., molecules, proteins, brain, etc.)</li>
+                  <li>Public Safety and Health: Geosocial media and citizen science, spatial event prediction and forecasting (e.g., public safety, public health, politics)</li>
+                  <li>Cyberinfrastructures: GeoAI Cyberinfrastructure for Earth Science Applications, Geoinformation System (GIS) systems using deep learning, GeoAI scientific workflow development and optimization</li>
+                  <li>Sustainable Practices: Energy efficiency and carbon footprint, efficiency deployment on edge devices</li>
+                </ul>
+
+                <p class="mb-3 text-black"><b>Benchmarking and Optimization:</b></p>
+                <ul class="mb-3 text-black">
+                  <li>Novel Spatial Deep Learning Cyberinfrastructures</li>
+                  <li>Large-scale pre-training of foundation models on Earth imagery or simulation big data</li>
+                  <li>Model and data parallelism for novel foundation models for spatiotemporal data</li>
+                  <li>Energy efficiency and carbon footprint</li>
+                  <li>Efficiency deployment on edge devices</li>
+                  <li>Mobile computing systems using deep learning</li>
+                  <li>GeoAI Cyberinfrastructure for Earth Science Applications</li>
+                  <li>Geoinformation System (GIS) systems using deep learning</li>
+                  <li>GeoAI scientific workflow development and optimization</li>
+                  <li>Benchmarking AI on spatiotemporal problems, such as standardizing spatiotemporal datasets and metrics for GeoAI and Geo foundation model evaluation.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section">
+        <div class="block__73694 mb-2" id="program-section">
+          <div align="center">
+            <p class="mb-5 text-black">
+              <font size="6"><b>Program</b></font><br/>
+            </p>
+            <table border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <th align="left">Time</th>
+                <th align="left">Activities</th>
+                <th align="left">Speakers</th>
+              </tr>
+              <tr>
+                <td>9:00 AM - 9:05 AM</td>
+                <td>Opening Remarks</td>
+                <td>Workshop General Chairs</td>
+              </tr>
+              <tr>
+                <td>9:05 AM - 9:45 AM</td>
+                <td>Keynote 1, 30 min + 10 min Q/A</td>
+                <td>Geoff Webb, Monash University</td>
+              </tr>
+              <tr>
+                <td>9:45 AM - 10:25 AM</td>
+                <td>Keynote 2, 30 min + 10 min Q/A</td>
+                <td>Yong Li, Tsinghua University</td>
+              </tr>
+              <tr>
+                <td colspan="3" align="center"><b>Break: 15 min</b></td>
+              </tr>
+              <tr>
+                <td>10:40 AM - 11:20 AM</td>
+                <td>Keynote 3, 30 min + 10 min Q/A</td>
+                <td>Flora Salim, UNSW Sydney</td>
+              </tr>
+              <tr>
+                <td>11:20 AM - 12:00 PM</td>
+                <td>Keynote 4, 30 min + 10 min Q/A</td>
+                <td>Yuxuan Liang, HKUST (Guangzhou)</td>
+              </tr>
+              <tr>
+                <td>12:00 PM - 1:00 PM</td>
+                <td>Paper Presentation</td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section">
+        <div class="block__73694 mb-2" id="keynotes-section">
+          <div align="center">
+            <p class="mb-5 text-black">
+              <font size="6"><b>Keynote Speakers</b></font><br/>
+            </p>
+            <table border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="200" height="180">
+                  <div align="center">
+                    <img src="images/geoff.png" width="160" height="180" alt="Image" align="middle" class="myimg">
+                    <br/>
+                    <a href="https://i.giwebb.com/">Geoff Webb</a>
+                    <br/>
+                    <p class="mb-3 text-black">Monash University</p>
+                  </div>
+                </td>
+                <td width="200" height="180">
+                  <div align="center">
+                    <img src="images/yong.png" width="160" height="180" alt="Image" align="middle" class="myimg">
+                    <br/>
+                    <a href="https://fi.ee.tsinghua.edu.cn/~liyong/">Yong Li</a>
+                    <br/>
+                    <p class="mb-3 text-black">Tsinghua University</p>
+                  </div>
+                </td>
+                <td width="200" height="180">
+                  <div align="center">
+                    <img src="images/flora.png" width="160" height="180" alt="Image" align="middle" class="myimg">
+                    <br/>
+                    <a href="https://www.unsw.edu.au/staff/flora-salim">Flora Salim</a>
+                    <br/>
+                    <p class="mb-3 text-black">UNSW Sydney</p>
+                  </div>
+                </td>
+                <td width="200" height="180">
+                  <div align="center">
+                    <img src="images/Yuxuan.png" width="160" height="180" alt="Image" align="middle" class="myimg">
+                    <br/>
+                    <a href="https://yuxuanliang.com/">Yuxuan Liang</a>
+                    <br/>
+                    <p class="mb-3 text-black">HKUST(GZ)</p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section">
+        <div class="block__73694 mb-2" id="accep-paper-section">
+          <div align="center" style="max-width: 800px; margin: 0 auto;">
+            <p class="mb-5 text-black">
+              <font size="6"><b>Accepted Papers</b></font><br/>
+            </p>
+            <font color="black">
+              <p style="text-align: left;">Zhiqiang Jiang, Isaac Huang, and Xin Wang. <b>Utilizing Large Language Models for Indoor Tour Guidance</b></p>
+              <p style="text-align: left;">Cara Lee, Faisal Nabulsi, Michael Xu, Christopher Kan, Andrew Kan, Rachel Yun, Talal Nabulsi, Bryan Jiang, Isam Kharouf, Rana Suleiman, and Zaid Nabulsi. <b>AquaSent-TMMAE: A Self-Supervised Learning Method for Water Quality Monitoring from Spatiotemporal Data</b></p>
+              <p style="text-align: left;">Shaohua Wang, Yongyi Pan, Dachuan Xu, Cheng Su, Liang Zhou, and Yin Cheng. <b>Optimization of Location Selection for Fengchao Cabinets in Beijing Based on Deep Reinforcement Learning</b></p>
+              <p style="text-align: left;">Aniq Ur Rahman and Justin Coon. <b>Counterfactual Analysis of Temporal Graph Learning Models</b></p>
+            </font>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section">
+        <div class="block__73694 mb-2" id="org-com-section">
+          <div class="container">
+            <div align="center">
+              <p class="mb-5 text-black"><b><font size="6">Workshop Organizers</font></b></p>
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="219">
+                    <div align="center">
+                      <img src="images/zhe_jiang.jpeg" width="179" height="179" alt="Image" align="middle" class="myimg">
+                      <br/>
+                      <a href="https://www.jiangteam.org/">Zhe Jiang</a>
+                      <br/>
+                      <p class="mb-3 text-black">Assistant Professor<br/>University of Florida</p>
+                    </div>
+                  </td>
+                  <td width="240" height="143">
+                    <div align="center">
+                      <img src="images/Liang_Zhao.jpg" width="168" height="176" alt="Image" align="middle" class="myimg">
+                      <br/>
+                      <a href="https://cs.emory.edu/~lzhao41/index.htm">Liang Zhao</a>
+                      <br/>
+                      <p class="mb-3 text-black">Associate Professor<br/>Emory University</p>
+                    </div>
+                  </td>
+                  <td width="250">
+                    <div align="center">
+                      <img src="images/Xun_Zhou.jpg" width="140" height="180" alt="Image" align="middle" class="myimg">
+                      <br/>
+                      <a href="https://xunzhou2023.github.io/">Xun Zhou</a>
+                      <br/>
+                      <p class="mb-3 text-black">Professor, Harbin Institute of Technology, Shenzhen</p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <table width="500" height="300" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="250">
+                    <div align="center">
+                      <img src="images/junbo_zhang.jpeg" width="180" height="201" alt="Image" align="middle" class="myimg">
+                      <br/>
+                      <a href="https://zhangjunbo.org/">Junbo Zhang</a>
+                      <br/>
+                      <p class="mb-3 text-black">Senior Researcher<br/>JD Intelligent Cities Research</p>
+                    </div>
+                  </td>
+                  <td width="250">
+                    <div align="center">
+                      <img src="images/Shashi_Shekhar.jpg" width="180" height="201" alt="Image" align="middle" class="myimg">
+                      <br/>
+                      <a href="https://www-users.cs.umn.edu/~shekhar/">Shashi Shekhar</a>
+                      <br/>
+                      <p class="mb-3 text-black">McKnight Distinguished University Professor<br/>University of Minnesota</p>
+                    </div>
+                  </td>
+                  <td width="253" height="400">
+                    <div align="center">
+                      <img src="images/jieping_ye.png" width="300" alt="Image" align="middle" class="myimg">
+                      <br/>
+                      <a href="http://www.yelabs.net/">Jieping Ye</a>
+                      <br/>
+                      <p class="mb-3 text-black">Vice President at Alibaba Group<br/>Professor, University of Michigan, Ann Arbor</p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div align="center">
+              <p class="mb-5 text-black"><font size="6"><b>Publicity Chair</b></font><br/>
+                <a href="https://yifeizhangcs.github.io/">Yifei Zhang</a>, Emory University
+              </p>
+              <p class="mb-3 text-black"><b><font size="6">Program Committee</font></b><br/>
+                Steffen Knoblauch, Heidelberg University<br/>
+                Arnold Boedihardjo, DigitalGlobe<br/>
+                Wei Wang, Microsoft Research<br/>
+                Ray Dos Santos, Army Corps of Engineers<br/>
+                Chao Zhang, Georgia Tech<br/>
+                Yanjie Fu, UCF<br/>
+                Xuchao Zhang, NEC Lab North America<br/>
+                Yanfang Ye, University of Notre Dame<br/>
+                Yanhua Li, WPI<br/>
+                Jing Dai, Google<br/>
+                Yiqun Xie, University of Maryland<br/>
+                Xiaowei Jia, University of Pittsburgh<br/>
+                Junbo Zhang, JD Digital<br/>
+                Jie Bao, JD Digital<br/>
+                Song Gao, University of Wisconsin, Madison<br/>
+                Jingyuan Wang, Beihang University<br/>
+                Lexie Yang, ORNL<br/>
+                Borko Furht, Florida Atlantic University<br/>
+                Taghi Khoshgoftaar, Florida Atlantic University<br/>
+                Senzhang Wang, Central South University
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section">
+        <div class="block__73694 mb-2" id="paper-sub-section">
+          <div class="container">
+            <div class="row d-flex no-gutters align-items-stretch">
+              <div class="col-lg-12" data-aos="" data-aos-delay="">
+                <div align="center">
+                  <p class="mb-5 text-black"><font size="6"><b>Paper Submission</b></font></p>
+                </div>
+                <p class="mb-3 text-black">
+                  Important Dates: (all due Midnight Anywhere on Earth).<br/>
+                  <s>Paper submission deadline: <b>June 14, 2024</b><br/></s>
+                  <s>Paper review begins: <b>June 14, 2024</b><br/></s>
+                  <s>Paper review due: <b>June 27, 2024</b><br/></s>
+                  <s>Notification of decision: <b>June 28, 2024</b><br/></s>
+                  Notifications to Workshop Chairs (number of papers, acceptance rate, etc.): <b>July 2nd, 2024</b><br/>
+                  Camera-ready due: <b>July 10, 2024</b><br/>
+                  Workshop Program Schedule and Full Website Online: <b>July 11, 2024</b><br/>
+                  Workshop Date: <b>August 25, 2024</b>
+                </p>
+                <p class="mb-3 text-black">The workshop welcomes the two types of submissions:</p>
+                <ul>
+                  <li><p class="mb-3 text-black">Full research papers – up to 9 pages (8 pages at most for the main body and the last page can only hold references)</p></li>
+                  <li><p class="mb-3 text-black">Vision papers and short system papers - up to 5 pages (4 pages at most for the main body and the last page can only hold references)</p></li>
+                  <li><p class="mb-3 text-black">Extended abstracts (posters) - up to 2 pages </p></li>
+                </ul>
+                <p class="mb-3 text-black">
+                  All manuscripts should be submitted in a single PDF file including all content, figures, tables, and references, following the format of KDD conference papers. Paper submissions need to include author information (review not double blinded).<br/><br/>
+                  Papers should be submitted at: <a href="https://easychair.org/conferences/?conf=deepspatial24"><span class="s4">https://easychair.org/conferences/?conf=deepspatial24</span></a><br/>
+                  Concurrent submissions to other journals and conferences are acceptable. Accepted papers will be presented as posters or short talks during the workshop and published on the workshop website. Besides, a small number of accepted papers may be selected to be presented as contributed talks. <u>As a tradition, accepted workshop papers are NOT included in the ACM Digital Library. The authors maintain the copyright of their papers</u>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section">
+        <div class="block__73694 mb-2" id="contact-info">
+          <div class="container">
+            <div class="row d-flex no-gutters align-items-stretch">
+              <div class="col-lg-12" data-aos="" data-aos-delay="">
+                <div align="center">
+                  <p class="mb-5 text-black"><font size="6"><b>Contact Information</b></font></p>
+                  <p class="mb-3 text-black">
+                    Zhe Jiang, zhe.jiang@ufl.edu, Tel: (352) 294-6659<br/>
+                    Liang Zhao, liang.zhao@emory.edu, Tel: (703) 993 5910<br/>
+                    Xun Zhou, zhouxun2023@hit.edu.cn<br/>
+                    Junbo Zhang, msjunbozhang@outlook.com
+                  </p>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-5 mt-5 text-center">
+        <div class="col-md-12">
+          <div class="border-top pt-5">
+            <p class="copyright"><small>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            </small></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <title>DeepSpatial 2024</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700|Oswald:400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -482,4 +935,4 @@
   <script src="js/main.js"></script>
 
   </body>
-</html>
+</html> -->
